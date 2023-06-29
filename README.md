@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @FDFands
 - 👀 I’m interested in learn progamming
 - 🌱 I’m currently learning the basic, like html, css and java
-- 💞️ I’m looking to collaborate on all i can
+- 💞️ I’m looking to collaborate on all I can
 - 📫 How to reach me send a email to me (pepito.ferraz@gmail.com)
 
 <!---
