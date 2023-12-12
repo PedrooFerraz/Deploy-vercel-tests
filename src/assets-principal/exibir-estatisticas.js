@@ -1,4 +1,4 @@
-const URL = 'https://json-server-life-machine.vercel.app/usuarios';
+const URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();

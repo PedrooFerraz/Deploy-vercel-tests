@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var URL = 'https://json-server-life-machine.vercel.app/usuarios';
+    var URL = 'https://db-json-life-machine.onrender.com/usuarios';
     var users = [];
     var x; 
 

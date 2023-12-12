@@ -1,4 +1,4 @@
-var URL = 'https://json-server-life-machine.vercel.app/usuarios';
+var URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
 $(document).ready(function () {
     $('#login-form').submit(function (event) {

@@ -1,5 +1,5 @@
-const URL1 = 'https://json-server-life-machine.vercel.app/treinos';
-const URL2 = 'https://json-server-life-machine.vercel.app/usuarios';
+const URL1 = 'https://db-json-life-machine.onrender.com/treinos';
+const URL2 = 'https://db-json-life-machine.onrender.com/usuarios';
 var auxID = JSON.parse(localStorage.getItem('atualID'))
 const fichas3X = document.getElementById('carrossel-fichas')
 const fichas5X = document.getElementById('carrossel-fichas')
