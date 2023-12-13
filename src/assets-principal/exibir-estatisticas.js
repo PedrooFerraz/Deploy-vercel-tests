@@ -1,10 +1,18 @@
 const URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
+fetch(`${URL}/${auxID}`)
+  .then(res => res.json())
+  .then(user => {
+    var pesoRefresh = user.peso;
+    sessionStorage.setItem('pesoAtual', pesoRefresh)
+  });
+  
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var jsonMes = `PesoMes` + mes
 var auxPeso = JSON.parse(sessionStorage.getItem('pesoAtual'))
 var auxID = JSON.parse(sessionStorage.getItem('atualID'))
+
 
 fetch(`${URL}/${auxID}`)
   .then(response => {
