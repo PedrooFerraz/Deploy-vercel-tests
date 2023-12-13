@@ -1,3 +1,5 @@
+const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
+
 function inicial(){
   sessionStorage.setItem("atualID","1")
 }
