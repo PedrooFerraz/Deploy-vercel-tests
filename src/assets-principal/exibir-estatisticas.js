@@ -1,3 +1,4 @@
+$(document).ready(function () {
 const URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
 var dataAtual = new Date();
@@ -125,3 +126,4 @@ fetch(`${URL}/${auxID}`)
     });
 
   })
+});
