@@ -13,10 +13,10 @@ $(document).ready(function () {
                 var cadastrado = tentarlogin(data, email, senha);
 
                 if (cadastrado) {
-                    localStorage.setItem('userName', Detalhescadastrousuario(data, email).Nome);
-                    localStorage.setItem('pesoAtual', Detalhescadastrousuario(data, email).peso);
-                    localStorage.setItem('atualID', Detalhescadastrousuario(data, email).id)
-                    localStorage.setItem('ficha', 0)
+                    sessionStorage.setItem('userName', Detalhescadastrousuario(data, email).Nome);
+                    sessionStorage.setItem('pesoAtual', Detalhescadastrousuario(data, email).peso);
+                    sessionStorage.setItem('atualID', Detalhescadastrousuario(data, email).id)
+                    sessionStorage.setItem('ficha', 0)
                     window.location.href = './pagina-principal.html';
                     
                 } else {

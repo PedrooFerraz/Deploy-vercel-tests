@@ -1,6 +1,6 @@
 //Exibe o peso atual do usuario na box do meio
 const pesoAtualArea = document.getElementById("peso-atual")
-var peso = JSON.parse(localStorage.getItem("pesoAtual"))
+var peso = JSON.parse(sessionStorage.getItem("pesoAtual"))
 
 pesoAtualArea.innerHTML = `${peso}Kg`
 
@@ -18,7 +18,7 @@ var jsonMes = `QtdTreinoMes` + mes
 
 
 const URL = 'https://db-json-life-machine.onrender.com/usuarios';
-var auxID = JSON.parse(localStorage.getItem('atualID'))
+var auxID = JSON.parse(sessionStorage.getItem('atualID'))
 
 fetch(`${URL}/${auxID}`)
   .then(res => res.json())
@@ -29,11 +29,11 @@ fetch(`${URL}/${auxID}`)
     var botao_treino = document.getElementById('concluir-treino');
     botao_treino.addEventListener('click', function (event) {
       const auxClique = dia;
-      const ultimoClique = localStorage.getItem('ultimoClique');
+      const ultimoClique = sessionStorage.getItem('ultimoClique');
 
       if (ultimoClique != auxClique) {
         treinoConcluidos++;
-        localStorage.setItem('ultimoClique', auxClique);
+        sessionStorage.setItem('ultimoClique', auxClique);
 
         // Atualiza o JSON Server
         fetch(`${URL}/${auxID}`, {
