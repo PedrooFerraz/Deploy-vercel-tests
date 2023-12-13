@@ -152,7 +152,7 @@ function Reload(){
 }
 
 function GetNome() {
-  const idUsuario = sessionStorage.getItem("atualID");
+  const idUsuario = JSON.parse(sessionStorage.getItem("atualID"));
   const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
 
   const opcoes3 = {
