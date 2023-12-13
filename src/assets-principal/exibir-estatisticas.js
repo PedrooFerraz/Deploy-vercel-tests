@@ -1,4 +1,3 @@
-$(document).ready(function () {
 const URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
 var dataAtual = new Date();
@@ -14,6 +13,7 @@ fetch(`${URL}/${auxID}`)
       return fetch(`${URL}/${auxID}`)
         .then(res => res.json())
         .then(usuario => {
+          if (!usuario[jsonMes]) {
             return fetch(`${URL}/${auxID}`, {
               method: "PATCH",
               headers: {
@@ -21,6 +21,7 @@ fetch(`${URL}/${auxID}`)
               },
               body: JSON.stringify({ [jsonMes]: auxPeso }), // Atualiza apenas o mês atual
             });
+          }
         });
     } else {
       console.error("Usuário não encontrado.");
@@ -124,4 +125,3 @@ fetch(`${URL}/${auxID}`)
     });
 
   })
-})

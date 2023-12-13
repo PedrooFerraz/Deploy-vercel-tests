@@ -193,9 +193,6 @@ function verificarValor(valor) {
 }
 
 function campo(){
-  const idUsuario = sessionStorage.getItem("atualID");
-  const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
-
   var disposicao = document.getElementById("DiasDeTreino");
   var peso = document.getElementById("Peso");
   var objetivo = document.getElementById("Objetivo");
@@ -222,19 +219,6 @@ function campo(){
   else{
     alert("Valor de Peso inválido");
   }
-var dataAtual = new Date();
-var mes = dataAtual.getMonth();
-var jsonMes = `PesoMes` + mes
-var auxPeso = JSON.parse(sessionStorage.getItem('pesoAtual'))
-
-fetch(`${url1}`, {
-              method: "PATCH",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({ [jsonMes]: auxPeso }), // Atualiza apenas o mês atual
-            });
-
 }
 
 function GetImg() {
