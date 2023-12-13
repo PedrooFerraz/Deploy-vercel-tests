@@ -396,6 +396,7 @@ function deleteData() {
     })
     .then(data => {
       console.log('Dados apagados com sucesso');
+      sessionStorage.clear();
       window.location.href = './pagina-login.html';
     })
     .catch(error => {
