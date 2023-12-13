@@ -13,7 +13,7 @@ fetch(`${URL}/${auxID}`)
       return fetch(`${URL}/${auxID}`)
         .then(res => res.json())
         .then(usuario => {
-          if (!usuario[jsonMes]) {
+          if (usuario[jsonMes]) {
             return fetch(`${URL}/${auxID}`, {
               method: "PATCH",
               headers: {
