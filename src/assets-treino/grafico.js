@@ -108,6 +108,7 @@ function atualizarGrafico() {
         .catch(error => {
             console.error("Erro durante a operação:", error);
         });
+        window.location.reload();
 }
 
 atualizarGrafico();
