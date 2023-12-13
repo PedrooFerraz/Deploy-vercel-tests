@@ -198,8 +198,8 @@ function campo(){
   var objetivo = document.getElementById("Objetivo");
   var senha = document.getElementById("password");
 
-  if (!disposicao.value && !objetivo.value && !senha.value && !senha.value){
-    alert("Não é possível atualizar, preencha pelo um dos campos!");
+  if (!disposicao.value && !objetivo.value && !peso.value && !senha.value){
+    alert("Não é possível atualizar, preencha pelo menos um dos campos!");
   }
   if(verificarValor(peso.value)==false){
     if(disposicao.value){
