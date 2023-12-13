@@ -222,6 +222,7 @@ function campo(){
 var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var jsonMes = `PesoMes` + mes
+var auxPeso = JSON.parse(sessionStorage.getItem('pesoAtual'))
 
 fetch(`${url1}`, {
               method: "PATCH",
