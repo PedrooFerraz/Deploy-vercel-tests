@@ -52,8 +52,7 @@ $(document).ready(function () {
                     peso: Peso,
                     objetivo: Objetivo,
                     diasDeTreino: DiasDeTreino,
-                    sexo: Sexo,
-                    "imgUsuario": `../assets-configuracao/img/avatar/Avatar1.png`
+                    sexo: Sexo
                 };
 
                 fetch(URL, {
