@@ -219,6 +219,12 @@ function campo(){
   else{
     alert("Valor de Peso inválido");
   }
+
+  var dataAtual = new Date();
+var mes = dataAtual.getMonth();
+var jsonMes = `PesoMes` + mes
+
+
 }
 
 function GetImg() {
