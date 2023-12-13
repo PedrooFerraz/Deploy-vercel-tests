@@ -1,4 +1,3 @@
-
 function inicial(){
   sessionStorage.setItem("atualID","1")
 }
@@ -196,7 +195,7 @@ function verificarValor(valor) {
 function campo(){
   const idUsuario = sessionStorage.getItem("atualID");
   const url1 = `https://db-json-life-machine.onrender.com/usuarios/${idUsuario}`;
-  
+
   var disposicao = document.getElementById("DiasDeTreino");
   var peso = document.getElementById("Peso");
   var objetivo = document.getElementById("Objetivo");
