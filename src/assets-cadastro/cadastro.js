@@ -32,8 +32,7 @@ $(document).ready(function () {
                 var Objetivo = $('#Objetivo').val();
                 var DiasDeTreino = $('#DiasDeTreino').val();
                 var Sexo = $('#Sexo').val();
-                var 
-
+                
                 if (emailUsado(email)) {
                     alert('Este e-mail já está em uso. Por favor, use outro e-mail.');
                     return;
