@@ -1,6 +1,7 @@
 const URL = 'https://db-json-life-machine.onrender.com/usuarios';
 
 var auxID = JSON.parse(sessionStorage.getItem('atualID'))
+
 fetch(`${URL}/${auxID}`)
   .then(res => res.json())
   .then(user => {
@@ -21,7 +22,7 @@ fetch(`${URL}/${auxID}`)
       return fetch(`${URL}/${auxID}`)
         .then(res => res.json())
         .then(usuario => {
-          if (!usuario[jsonMes]) {
+          if (usuario[jsonMes]) {
             return fetch(`${URL}/${auxID}`, {
               method: "PATCH",
               headers: {
