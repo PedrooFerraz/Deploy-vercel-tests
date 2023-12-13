@@ -29,11 +29,11 @@ fetch(`${URL}/${auxID}`)
     var botao_treino = document.getElementById('concluir-treino');
     botao_treino.addEventListener('click', function (event) {
       const auxClique = dia;
-      const ultimoClique = sessionStorage.getItem('ultimoClique');
+      const ultimoClique = localStorage.getItem('ultimoClique');
 
       if (ultimoClique != auxClique) {
         treinoConcluidos++;
-        sessionStorage.setItem('ultimoClique', auxClique);
+        localStorage.setItem('ultimoClique', auxClique);
 
         // Atualiza o JSON Server
         fetch(`${URL}/${auxID}`, {
