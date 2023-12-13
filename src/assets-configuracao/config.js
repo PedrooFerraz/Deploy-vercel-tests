@@ -219,12 +219,32 @@ function campo(){
   else{
     alert("Valor de Peso inválido");
   }
-
-  var dataAtual = new Date();
+var dataAtual = new Date();
 var mes = dataAtual.getMonth();
 var jsonMes = `PesoMes` + mes
 
-
+fetch(`${URL}/${auxID}`)
+  .then(response => {
+    if (response.ok) {
+      // Se o usuário existir, realizar o PATCH apenas se a estrutura do mês não existir
+      return fetch(`${URL}/${auxID}`)
+        .then(res => res.json())
+        .then(usuario => {
+            return fetch(`${URL}/${auxID}`, {
+              method: "PATCH",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ [jsonMes]: auxPeso }), // Atualiza apenas o mês atual
+            });
+        });
+    } else {
+      console.error("Usuário não encontrado.");
+    }
+  })
+  .catch(error => {
+    console.error("Erro durante a operação:", error);
+  });
 }
 
 function GetImg() {
