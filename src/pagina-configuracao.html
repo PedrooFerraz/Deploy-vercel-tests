@@ -63,7 +63,7 @@
                     <script>
                         function AtualizandoImagemInicial(){
                             let a = document.getElementById("imagemUsuario");
-                            let b = sessionStorage.getItem("caminhoImagemUsuario");
+                            let b = sessionStorage.getItem("imgUsuario");
                             a.src = b;
                         }
                     </script>
@@ -71,7 +71,7 @@
                         <script>
                             function AtualizandoNomeUsuario(){
                                 let a = document.getElementById("usuA");
-                                let b = sessionStorage.getItem("nome");
+                                let b = sessionStorage.getItem("userName");
                                 let v = `<h2>${b}</h2>`;
                                 a.innerHTML = v;
                             }
