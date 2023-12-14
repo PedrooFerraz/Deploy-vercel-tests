@@ -38,63 +38,63 @@ function atualizarFoto(){
 
   if(elementoSelect=="Avatar1"){
     let c = './assets-configuracao/img/avatar/Avatar1.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar2"){
     let c = './assets-configuracao/img/avatar/Avatar2.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar3"){
     let c = './assets-configuracao/img/avatar/Avatar3.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar4"){
     let c = './assets-configuracao/img/avatar/Avatar4.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar5"){
     let c = './assets-configuracao/img/avatar/Avatar5.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar6"){
     let c = './assets-configuracao/img/avatar/Avatar6.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar7"){
     let c = './assets-configuracao/img/avatar/Avatar7.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar8"){
     let c = './assets-configuracao/img/avatar/Avatar8.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
   }
   if(elementoSelect=="Avatar9"){
     let c = './assets-configuracao/img/avatar/Avatar9.png'
-    sessionStorage.setItem("caminhoImagemUsuario", c);
+    sessionStorage.setItem("ImgUsuario", c);
     b.src = c;
     AtualizaFoto(c)
     Visibilidade();
