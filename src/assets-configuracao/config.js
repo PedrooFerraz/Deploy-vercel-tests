@@ -219,6 +219,7 @@ function campo(){
   else{
     alert("Valor de Peso inválido");
   }
+  alert("Dados atualizados")
 }
 
 function GetImg() {
