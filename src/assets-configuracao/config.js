@@ -204,18 +204,20 @@ function campo(){
   if(verificarValor(peso.value)==false){
     if(disposicao.value){
       GetDiasDeTreino(disposicao.value)
+      alert("Rotina de treino atualizada");
     }
     if(peso.value){
       var pesoFloat = parseFloat(peso.value.replace(',', '.'));
       GetPeso(pesoFloat);
-      alert("Dados atualizados")
+      alert("Peso atualizado");
     }
     if(objetivo.value){
       GetObjetivo(objetivo.value)
-      alert("Dados atualizados")
+      alert("Objetivo atualizado");
     }
     if(senha.value){
       GetSenha(senha.value)
+      alert("Senha atualizada");
     }
   }
   else{
