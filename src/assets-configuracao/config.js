@@ -208,9 +208,11 @@ function campo(){
     if(peso.value){
       var pesoFloat = parseFloat(peso.value.replace(',', '.'));
       GetPeso(pesoFloat);
+      alert("Dados atualizados")
     }
     if(objetivo.value){
       GetObjetivo(objetivo.value)
+      alert("Dados atualizados")
     }
     if(senha.value){
       GetSenha(senha.value)
@@ -219,7 +221,6 @@ function campo(){
   else{
     alert("Valor de Peso inválido");
   }
-  alert("Dados atualizados")
 }
 
 function GetImg() {
